@@ -10,15 +10,15 @@ CK登录 需后台有原CK(过期的也行) 输入新CK显示`欢迎回来XXX`�
 
 ```bash
 docker exec -it qinglong bash
-cd /ql && git clone https://github.com.cnpmjs.org/QiFengg/Ninja-qifeng.git
-cd /ql/Ninja-qifeng/backend
+git clone https://github.com/topw2009/Ninja-qifeng.git /ql/ninja
+cd /ql/ninja/backend
 pnpm install
 cp sendNotify.js /ql/scripts/sendNotify.js
 pm2 start
 
-cd /ql/Ninja-qifeng
+cd /ql/ninja
 git pull
-cd /ql/Ninja-qifeng/bakcend
+cd /ql/ninja/bakcend
 pm2 restart
 ```
 
